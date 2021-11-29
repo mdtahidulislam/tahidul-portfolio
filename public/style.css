@@ -1,0 +1,78 @@
+/* color */
+:root {
+    --primary: #64ffda;
+    --tertiary: #0a192f;
+    --secondary: #747e9b;
+    --menu-color: #ccd6f6;
+}
+
+/* normalize css */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body {
+    background: var(--tertiary);
+    color: var(--secondary);
+}
+
+/* utilities */
+.d-flex {
+    display: flex;
+}
+
+/* =========== HEADER AREA CSS  ==================*/
+.header {
+    padding: 20px 15px;
+}
+/* logo */
+.logo a {
+    display: block;
+}
+
+.logo {
+    width: 40px;
+}
+/* menu css */
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul li a {
+    display: inline-block;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--menu-color);
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: var(--primary);
+}
+
+.menu ul li {
+    margin: 0 5px;
+}
+
