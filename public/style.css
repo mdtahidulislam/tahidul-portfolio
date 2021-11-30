@@ -226,7 +226,7 @@ h2.hero__title {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-gap: 50px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .about-text P {
@@ -235,3 +235,55 @@ h2.hero__title {
     line-height: 27px;
 }
 
+.skill-set {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    margin-bottom: 30px;
+}
+
+.skill-set li {
+    position: relative;
+}
+
+.skill-set li::before {
+    content: '-- ';
+}
+
+.about-img {
+    position: relative;
+    background-color: var(--primary);
+    border-radius: 5px;
+}
+
+.about-img img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+    transition: 0.3s;
+}
+
+.about-img::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--primary);
+    top: 25px;
+    display: block;
+    position: absolute;
+    left: 25px;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.about-img img:hover  {
+    mix-blend-mode: normal;
+}
+
+.about-img:hover::after{
+    top: 20px;
+    left: 20px;
+}
