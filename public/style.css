@@ -200,7 +200,11 @@ h2.hero__title {
 
 /* =========== ABOUT AREA CSS  ==================*/
 .about {
-    margin-top: 130px;
+    margin-top: 160px;
+}
+
+.container--about {
+    max-width: 900px;
 }
 
 .section__title {
@@ -286,4 +290,36 @@ h2.hero__title {
 .about-img:hover::after{
     top: 20px;
     left: 20px;
+}
+
+/* =========== EXPERIENCE AREA CSS  ==================*/
+.experience {
+    margin-top: 160px;
+}
+
+
+.experience-inner {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.position h3 {
+    margin-bottom: 12px;
+    color: var(--menu-color);
+}
+
+.position span {
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.position ul li {
+    margin-bottom: 10px;
+}
+
+.position ul li:before {
+    content: '▹';
+    color: var(--primary);
+    margin-right: 15px;
+    font-size: 20px;
 }
