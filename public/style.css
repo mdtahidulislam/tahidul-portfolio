@@ -147,6 +147,7 @@ h2.hero__title {
     position: relative;
     display: inline-block;
     margin-bottom: 20px;
+    transition: 0.3s;
 }
 
 .connect__box::after {
@@ -181,7 +182,8 @@ h2.hero__title {
     transition: 0.3s;
 }
 
-.connect__social li a:hover  {
+.connect__social li a:hover,
+.connect__email:hover  {
     transform: translateY(-3px);
     color: var(--primary);
 }
@@ -194,5 +196,42 @@ h2.hero__title {
 }
 .connect__social svg:hover circle {
     stroke: var(--primary)
+}
+
+/* =========== ABOUT AREA CSS  ==================*/
+.about {
+    margin-top: 130px;
+}
+
+.section__title {
+    font-size: 30px;
+    color: var(--menu-color);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section__title::after {
+    content: '';
+    width: 300px;
+    height: 0.5px;
+    background: var(--secondary);
+    position: absolute;
+    top: 50%;
+    right: auto;
+    transform: translateY(-50%);
+    margin-left: 26px;
+}
+
+.about-inner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 50px;
+    align-items: center;
+}
+
+.about-text P {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 27px;
 }
 
