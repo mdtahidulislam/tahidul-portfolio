@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import './Header.css'
+import myResume from './../../../tahidul_islam_full_stack_developer.pdf'
 
 const Header = () => {
     return (
@@ -26,6 +27,10 @@ const Header = () => {
                             </li>
                             <li>
                                 <Link to="/contact">Contact</Link>
+                            </li>
+                            <li>
+                                {/* <Link to="/tahidul_islam_full_stack_developer.pdf" download>Resume</Link> */}
+                                <a href={myResume} download>Resume</a>
                             </li>
                         </ul>
                     </div>
