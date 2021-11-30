@@ -4,7 +4,7 @@ import imgMine from '../../../tahidul.jpg';
 const About = () => {
     return (
         <section id="about" className="about">
-            <div className="container">
+            <div className="container container--about">
                 <article className="section-article">
                     <h2 className="section__title">About Me</h2>
                 </article>

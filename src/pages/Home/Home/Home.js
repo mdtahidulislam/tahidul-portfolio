@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../Shared/Header/Header';
 import About from '../About/About';
+import Experience from '../Experience/Experience';
 import Hero from '../Hero/Hero';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
             <Header></Header>
             <Hero></Hero>
             <About></About>
+            <Experience></Experience>
             <div className="connect connect--left">
                 <div className="connect__box">
                     <ul className="connect__social">
