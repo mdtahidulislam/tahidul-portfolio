@@ -1,9 +1,10 @@
 /* color */
 :root {
     --primary: #64ffda;
-    --tertiary: #0a192f;
     --secondary: #747e9b;
+    --tertiary: #0a192f;
     --menu-color: #ccd6f6;
+    --btn-hover: #133040;
 }
 
 /* normalize css */
@@ -17,8 +18,12 @@ ul {
     padding: 0;
 }
 
+p, h1, h2, h3 {
+    margin: 0;
+}
+
 .container {
-    max-width: 1170px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -34,6 +39,19 @@ ul {
 body {
     background: var(--tertiary);
     color: var(--secondary);
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid var(--primary);
+    padding: 16px 40px;
+    color: var(--primary);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--btn-hover);
 }
 
 /* utilities */
@@ -74,5 +92,107 @@ body {
 
 .menu ul li {
     margin: 0 5px;
+}
+
+/* =========== HERO AREA CSS  ==================*/
+.hero__lead {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: var(--primary);
+}
+
+h1.hero__title {
+    font-size: 70px;
+    color: var(--menu-color);
+}
+
+h2.hero__title {
+    font-size: 70px;
+    margin-bottom: 30px;
+    color: var(--secondary);
+}
+
+.hero_text {
+    max-width: 515px;
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+/* =========== CONNECT CSS  ==================*/
+.connect {
+    position: fixed;
+    bottom: 0;
+    writing-mode: vertical-lr;
+}
+
+.connect--left {
+    left: 40px;
+    right:auto;
+}
+
+.connect--right {
+    right: 40px;
+    left: auto;
+}
+
+.connect__box {
+    display: flex;
+    align-items: center;
+}
+
+.connect__email {
+    color: var(--secondary);
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.connect__box::after {
+    content: '';
+    width: 1px;
+    height: 90px;
+    background: var(--secondary);
+    display: block;
+    margin: 0px auto;
+}
+
+/* connect social */
+.connect__social {
+    display: flex;
+    align-items: center;
+}
+
+.connect__social li:last-child {
+    margin-bottom: 10px;
+}
+
+.connect__social a {
+    display: inline-block;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.connect__social svg {
+    width: 20px;
+    fill: none;
+    stroke: var(--secondary);
+    transition: 0.3s;
+}
+
+.connect__social li a:hover  {
+    transform: translateY(-3px);
+    color: var(--primary);
+}
+
+.connect__social svg:hover path {
+    stroke: var(--primary)
+}
+.connect__social svg:hover rect {
+    stroke: var(--primary)
+}
+.connect__social svg:hover circle {
+    stroke: var(--primary)
 }
 

@@ -30,7 +30,7 @@ const Header = () => {
                             </li>
                             <li>
                                 {/* <Link to="/tahidul_islam_full_stack_developer.pdf" download>Resume</Link> */}
-                                <a href={myResume} download>Resume</a>
+                                <a className="btn" href={myResume} download>Resume</a>
                             </li>
                         </ul>
                     </div>
