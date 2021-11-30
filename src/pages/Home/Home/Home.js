@@ -3,6 +3,7 @@ import Header from '../../Shared/Header/Header';
 import About from '../About/About';
 import Experience from '../Experience/Experience';
 import Hero from '../Hero/Hero';
+import Work from '../Work/Work';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Hero></Hero>
             <About></About>
             <Experience></Experience>
+            <Work></Work>
             <div className="connect connect--left">
                 <div className="connect__box">
                     <ul className="connect__social">

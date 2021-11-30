@@ -5,6 +5,7 @@
     --tertiary: #0a192f;
     --menu-color: #ccd6f6;
     --btn-hover: #133040;
+    --dark-blue: #112240;
 }
 
 /* normalize css */
@@ -20,6 +21,11 @@ ul {
 
 p, h1, h2, h3 {
     margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -297,6 +303,9 @@ h2.hero__title {
     margin-top: 160px;
 }
 
+.container--experience {
+    max-width: 700px;
+}
 
 .experience-inner {
     display: grid;
@@ -315,11 +324,67 @@ h2.hero__title {
 
 .position ul li {
     margin-bottom: 10px;
+    padding-left: 35px;
+    position: relative;
 }
 
 .position ul li:before {
     content: '▹';
     color: var(--primary);
-    margin-right: 15px;
     font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* =========== WORK AREA CSS  ==================*/
+.work {
+    margin-top: 160px;
+}
+.work__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.work__grid:nth-of-type(2n+1) .project {
+    text-align: right;
+}
+
+.project-img {
+    grid-area: 1 / 8/ 1 / 1;
+}
+
+.project {
+    grid-area: 1 / -1 / 1 / 7;
+}
+
+.project__overline {
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.project__title {
+    font-size: 25px;
+    color: var(--menu-color);
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.project__title:hover {
+    color: var(--primary);
+}
+
+.project__description {
+    padding: 20px;
+    background: var(--dark-blue);
+    border-radius: 5px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.project__tech li {
+    display: inline-block;
+    margin: 0 5px;
 }

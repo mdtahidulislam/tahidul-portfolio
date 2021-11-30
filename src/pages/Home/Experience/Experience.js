@@ -3,7 +3,7 @@ import React from 'react';
 const Experience = () => {
     return (
         <section id="experience" className="experience">
-            <div className="container">
+            <div className="container container--experience">
                 <article className="section-article">
                     <h2 className="section__title">Where I’ve Worked</h2>
                 </article>

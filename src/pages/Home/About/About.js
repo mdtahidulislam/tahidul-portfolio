@@ -1,5 +1,5 @@
 import React from 'react';
-import imgMine from '../../../tahidul.jpg';
+import imgMine from '../../../images/tahidul.jpg';
 
 const About = () => {
     return (
