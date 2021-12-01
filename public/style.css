@@ -384,7 +384,32 @@ h2.hero__title {
     margin-bottom: 20px;
 }
 
-.project__tech li {
+.project__tech li,
+.project__link li {
     display: inline-block;
     margin: 0 5px;
+}
+
+.project__link {
+    margin-top: 10px;
+}
+
+.project__link a {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.project__link li {
+    position: relative;
+}
+
+.project__link li::after {
+    content: '|';
+    position: absolute;
+    right: -7px;
+}
+
+.project__link li:last-child::after {
+    content: '';
 }

@@ -40,6 +40,11 @@ const Work = () => {
                                     <li>MongoDB</li>
                                     <li>Material UI</li>
                                 </ul>
+                                <ul className="project__link">
+                                    <li><a href="https://pottery-7f291.firebaseapp.com/">Live Site</a></li>
+                                    <li><a href="https://github.com/mdtahidulislam/pottery-client-side-mern">Client Side Code</a></li>
+                                    <li><a href="https://github.com/mdtahidulislam/pottery-client-side-mern">Server Side Code</a></li>
+                                </ul>
                             </div>
                         </li>
                     </ul>
